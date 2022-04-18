@@ -1,5 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
-    Initial version.
+    Support pinned cpanfile versions
 
+0.001     2022-04-18 09:39:14+08:00
+    Initial version.
