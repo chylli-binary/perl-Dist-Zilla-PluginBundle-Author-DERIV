@@ -150,8 +150,8 @@
    "version" : "0.002",
    "x_authority" : "cpan:DERIV",
    "x_contributors" : [
-      "Tom Molesworth <tom@binary.com>",
       "chylli-binary <chylli@binary.com>",
+      "Tom Molesworth <tom@binary.com>",
       "Eyad Arnabeh <eyadof@gmail.com>"
    ],
    "x_generated_by_perl" : "v5.34.1",
