@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    Fix ExtUtuls::MakeMaker Version in Makefile.PL
 
 0.002     2022-04-18 15:45:01+08:00 Asia/Shanghai
     Support pinned cpanfile versions

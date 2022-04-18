@@ -4,13 +4,13 @@ use warnings;
 
 use 5.006;
 
-use ExtUtils::MakeMaker;
+use ExtUtils::MakeMaker 7.64;
 
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Defines common dist.ini config for distributions by DERIV",
   "AUTHOR" => "Deriv Services Ltd <DERIV\@cpan.org>",
   "CONFIGURE_REQUIRES" => {
-    "ExtUtils::MakeMaker" => 0
+    "ExtUtils::MakeMaker" => "7.64"
   },
   "DISTNAME" => "Dist-Zilla-PluginBundle-Author-DERIV",
   "LICENSE" => "perl",
@@ -91,7 +91,7 @@ my %WriteMakefileArgs = (
     "Test::CheckDeps" => "0.010",
     "Test::More" => "0.94"
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.001",
   "test" => {
     "TESTS" => "t/*.t"
   }
