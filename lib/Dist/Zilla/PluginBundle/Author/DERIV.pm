@@ -4,7 +4,6 @@ package Dist::Zilla::PluginBundle::Author::DERIV;
 use strict;
 use warnings;
 
-# VERSION
 our $VERSION = '0.001';
 # AUTHORITY
 
