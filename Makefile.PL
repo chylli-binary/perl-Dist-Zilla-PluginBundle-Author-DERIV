@@ -77,6 +77,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Role::PluginBundle::Easy" => 0,
     "Dist::Zilla::Role::PluginBundle::PluginRemover" => 0,
     "Dist::Zilla::Util" => 0,
+    "ExtUtils::MakeMaker" => "7.64",
     "Moose" => 0,
     "Perl::Version" => 0,
     "Test::CPAN::Meta" => 0,
@@ -84,14 +85,14 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "ExtUtils::MakeMaker" => 0,
+    "ExtUtils::MakeMaker" => "7.64",
     "File::Spec" => 0,
     "IO::Handle" => 0,
     "IPC::Open3" => 0,
     "Test::CheckDeps" => "0.010",
     "Test::More" => "0.94"
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -159,7 +160,7 @@ my %FallbackPrereqs = (
   "Dist::Zilla::Role::PluginBundle::Easy" => 0,
   "Dist::Zilla::Role::PluginBundle::PluginRemover" => 0,
   "Dist::Zilla::Util" => 0,
-  "ExtUtils::MakeMaker" => 0,
+  "ExtUtils::MakeMaker" => "7.64",
   "File::Spec" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
