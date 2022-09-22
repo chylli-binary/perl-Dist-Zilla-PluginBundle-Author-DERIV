@@ -98,6 +98,7 @@ sub configure {
         ['Keywords'],
         ['VersionFromModule'],
         ['ReversionOnRelease'],
+	['BumpVersionAfterRelease'],
         ['OurPkgVersion'],
         ['Git::Contributors' => {order_by => 'commits'}],
         ['GithubMeta' => {remote => [@git_remotes], issues => 1}],
