@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    fix bump version problem
 
 0.003     2022-04-19 08:33:08+08:00 Asia/Shanghai
     Fix ExtUtuls::MakeMaker Version in Makefile.PL
