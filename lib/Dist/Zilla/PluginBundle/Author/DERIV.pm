@@ -51,13 +51,20 @@ has eumm_version => (
     },
 );
 
+has allow_dirty => (
+    is     => 'ro',
+    lazy   => 1,
+    default => sub {shift->payload->{allow_dirty} // [] },
+);
+
+sub mvp_multivalue_args{ qw(allow_dirty) }
+
 sub configure {
     my $self = shift;
-
     my @copy_from_build     = qw(LICENSE Makefile.PL);
     my @gather_exclude      = (@copy_from_build, qw(README.md));
     my @no_index            = qw(eg share shares t xt);
-    my @allow_dirty         = (@copy_from_build, qw(Changes LICENSE README.md));
+    my @allow_dirty         = (@copy_from_build, @{$self->allow_dirty}, qw(Changes LICENSE README.md));
     my @git_remotes         = qw(github origin);
     my @check_files         = qw(:InstallModules :ExecFiles :TestFiles :ExtraTestFiles);
     my $perl_version_target = $self->max_target_perl;
@@ -96,8 +103,7 @@ sub configure {
         ['MetaNoIndex' => {directory => [@no_index]}],
         ['MetaProvides::Package'],
         ['Keywords'],
-        ['VersionFromModule'],
-        ['ReversionOnRelease'],
+	['RewriteVersion'],
 	['BumpVersionAfterRelease'],
         ['OurPkgVersion'],
         ['Git::Contributors' => {order_by => 'commits'}],
