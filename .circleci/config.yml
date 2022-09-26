@@ -83,7 +83,7 @@ workflows:
               - "5.32"
               - "5.34"
     - release:
-       context: release_binary
+       context: cpan-release-deriv
        requires:
          - test
        filters:
