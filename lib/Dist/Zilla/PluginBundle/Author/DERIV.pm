@@ -57,7 +57,14 @@ has allow_dirty => (
     default => sub {shift->payload->{allow_dirty} // [] },
 );
 
-sub mvp_multivalue_args{ qw(allow_dirty) }
+has exclude_filename => (
+    is     => 'ro',
+    lazy   => 1,
+    default => sub {shift->payload->{exclude_filename} // [] },
+);
+
+
+sub mvp_multivalue_args{ qw(allow_dirty exclude_filename) }
 
 sub configure {
     my $self = shift;
