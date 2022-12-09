@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.005     2022-12-09 14:13:38+00:00 UTC
     add exclude_filename option to exclude some more files by Git::GatherDir
 
 0.004     2022-09-28 11:51:02+00:00 UTC
